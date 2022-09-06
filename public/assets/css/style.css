@@ -1,0 +1,144 @@
+@import url('./font.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+.slider-1 {
+    padding-top: 3rem;
+    padding-bottom: 2.875rem;
+}
+
+.slider-1 .container {
+    background-color: #f5f5f5;
+    padding: 1rem
+}
+
+.thumbnails {
+    margin-left: 0px;
+}
+
+
+.navbar {
+    /* background-color: red; */
+    padding: 0 25px 0 10px;
+}
+
+.search-form {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    border: 1.5px solid rgba(170, 170, 170, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.07);
+    margin: 1.75rem auto;
+    border-radius: 9px;
+    width: 80%;
+    padding-top: .5rem;
+}
+
+
+.search-box {
+    width: 100%;
+    border: none;
+    padding: 0.8rem 0;
+    outline: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1.25rem 1rem !important;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.search-box::placeholder {
+    font-weight: 400;
+}
+
+.search-btn {
+    display: block;
+    padding: 0.7rem 0;
+    margin-top: -9px;
+    border: none;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 0 9px 9px 0;
+}
+
+.search-btn::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-btn img {
+    width: 22px;
+    cursor: pointer
+}
+
+.search-btn:hover::after {
+    z-index: -1;
+}
+
+.selection {
+    margin-left: 1.25rem;
+    margin-bottom: 2rem
+}
+
+.pointure {
+    margin-right: 1rem
+}
+
+.pointure,
+.marque {
+    margin-top: 2rem;
+    padding: 5px;
+}
+
+.swiper-slide{
+    border: rgba(170, 170, 170, 0.24) solid 1px;
+    border-radius: 3px;
+}
+
+h4{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(170, 170, 170, 0.096)
+}
+
+body {
+    width: 100%;
+    text-align: center;
+    background-color: #aaa;
+    font-size: 18px;
+}
+
+h1 {
+    color: #719e40;
+    letter-spacing: -3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    font-weight: 200;
+    margin-bottom: 0;
+}

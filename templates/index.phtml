@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>City sport</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/swiper.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar flex btw algn">
+            <div class="logo"><img style="margin-left: -2rem;" src="https://www.lesgrandsboulevards.fr/img/enseignes/city-sport[1]11-07-29.jpg" alt="logo" width="222"></div>
+            <div class="logo" id="basket" style="cursor: pointer;"><img src="https://e7.pngegg.com/pngimages/309/800/png-clipart-computer-icons-shopping-cart-e-commerce-shopping-cart-text-retail.png" alt="logo" width="70"></div>
+        </nav>
+    </header>
+
+    <form class="search-form" id="form">
+        <input type="text" class="search-box" id="search" placeholder="Rechercher une chaussures">
+        <button type="submit" class="search-btn">
+            <img src="./assets/img/loupe.svg">
+        </button>
+    </form>
+
+    <div class="selection flex">
+        <select name="" id="taille" class="pointure">
+            <option value="">---Choisir la pointure---</option>
+        </select>
+        <select name="" id="marque" class="marque">
+            <option value="">---Choisir la marque---</option>
+        </select>
+    </div>
+
+
+
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Produits sportifs</h5>
+
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper" id="slider-shoes">
+
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Nike VaporMax 2020.png" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Nike Air Force.webp" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Nike VaporMax Gost.webp" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Nike VaporMax.png" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Nike air Zoom.jpg" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Tiberland.webp" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Air Zoom.png" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img width="140" class="img-responsive" src="../assets/img/Tiberland haute.webp" alt="${datas__chaussures[i].nomChaussure}">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="span13">
+        <div class="well well-small full"></div>
+        <h4>Sports </h4>
+        <ul class="thumbnails" id="result"></ul>
+        <ul class="thumbnails" id="resultSearch"></ul>
+        <ul class="thumbnails" id="resultSearchAll"></ul>
+
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>

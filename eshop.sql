@@ -77,15 +77,14 @@ INSERT INTO `chaussures` (`idxChaussure`, `idxMarque`, `taille`, `couleur`, `pri
 (NULL, 3, 45, 'Rouge', 50000, 'SPARCO', 'Nike VaporMax.png'),
 (NULL, 4, 33, 'Jaune', 47000, 'TIBERLAND', 'Tiberland haute.webp'),
 (NULL, 4, 40, 'Noir', 67000, 'TIBERLAND', 'Tiberland.webp'),
-(NULL, 2, 35, 'Gris', 25000, 'NIKE AIR ZOOM', 'Air Zoom.png'),
 (NULL, 2, 45, 'Noir', 35000, 'AIR ZOOM', 'Nike air Zoom.jpg');
 
 
 INSERT INTO `taille` (`idxTaille`, `taille`) VALUES
-(4, 33),
-(1, 35),
-(2, 40),
-(3, 45);
+(NULL, 33),
+(NULL, 35),
+(NULL, 40),
+(NULL, 45);
 
 
 

@@ -29,9 +29,8 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 
 	document.getElementById('result').innerHTML += 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -39,10 +38,9 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 
                 </p>
 
-                <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
+                <h4 style="text-align:center"><button id="btn${datas__chaussures[i].idxChaussure}">Add</button> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 };console.clear()}; grids__chaussures()
@@ -105,13 +103,12 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 
 	if (datas__chaussures.length > 1) {
     
-		document.getElementById('resultSearchAll').style.display='block'; 
+		document.getElementById('resultSearchAll').style.display='flex'; 
 	document.getElementById('resultSearch').style.display='none';
 		document.getElementById('resultSearchAll').innerHTML += 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -122,7 +119,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}else{
@@ -131,9 +127,8 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 	document.getElementById('resultSearchAll').style.display='none'; 
 		document.getElementById('resultSearch').innerHTML = 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -144,7 +139,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}
@@ -187,13 +181,12 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 
 	if (datas__chaussures.length > 1) {
     
-		document.getElementById('resultSearchAll').style.display='block'; 
+		document.getElementById('resultSearchAll').style.display='flex'; 
 	document.getElementById('resultSearch').style.display='none';
 		document.getElementById('resultSearchAll').innerHTML += 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -204,7 +197,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}else{
@@ -213,9 +205,8 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 	document.getElementById('resultSearchAll').style.display='none'; 
 		document.getElementById('resultSearch').innerHTML = 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -226,7 +217,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}
@@ -268,13 +258,12 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 
 	if (datas__chaussures.length > 1) {
     
-		document.getElementById('resultSearchAll').style.display='block'; 
+		document.getElementById('resultSearchAll').style.display='flex'; 
 	document.getElementById('resultSearch').style.display='none';
 		document.getElementById('resultSearchAll').innerHTML += 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -285,7 +274,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}else{
@@ -294,9 +282,8 @@ for (let i = 0; i < datas__chaussures.length; i++) {
 	document.getElementById('resultSearchAll').style.display='none'; 
 		document.getElementById('resultSearch').innerHTML = 
 	`
-    <li class="span4">
-        <div class="thumbnail">
-            <a href="product_details.html"><img  width="125" src="../assets/img/${datas__chaussures[i].images}" alt="" /></a>
+        <div class="item">
+            <a href="product_details.html"><div class="cadre"><img src="../assets/img/${datas__chaussures[i].images}" alt="" /></div></a>
             <div class="caption">
                 <h5>${datas__chaussures[i].nomChaussure}</h5>
                 <p>
@@ -307,7 +294,6 @@ for (let i = 0; i < datas__chaussures.length; i++) {
                 <h4 style="text-align:center"><a class="btn" href="product_details.html">Add</i></a> <a class="btn" href="#">taille: ${datas__chaussures[i].taille}<a class="btn btn-primary" href="#">${datas__chaussures[i].prix} fcfa</a></h4>
             </div>
         </div>
-    </li>
 
 	`
 	}

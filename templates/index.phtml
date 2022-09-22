@@ -8,13 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
     <link href="./assets/css/bootstrap.css" rel="stylesheet">
     <link href="./assets/css/swiper.css" rel="stylesheet">
+    <link href="./dashbord/vendor/select2/select2.min.css" rel="stylesheet" media="all">
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar flex btw algn">
             <div class="logo"><img style="margin-left: -2rem;" src="https://www.lesgrandsboulevards.fr/img/enseignes/city-sport[1]11-07-29.jpg" alt="logo" width="222"></div>
-            <div class="logo" id="basket" style="cursor: pointer;"><img src="https://e7.pngegg.com/pngimages/309/800/png-clipart-computer-icons-shopping-cart-e-commerce-shopping-cart-text-retail.png" alt="logo" width="70"></div>
+            <div style="display: flex; cursor: pointer;"><a href="admin">login</a> <div class="logo" id="basket" style="cursor: pointer; display: flex; margin-left: 28px;"><span><div>2</div></span><img src="https://e7.pngegg.com/pngimages/309/800/png-clipart-computer-icons-shopping-cart-e-commerce-shopping-cart-text-retail.png" alt="logo" width="70"></div></div>
         </nav>
     </header>
 
@@ -74,19 +75,23 @@
             <option value="">---Choisir la marque---</option>
         </select>
     </div>
+    
 
     <div class="span13">
         <div class="well well-small full"></div>
         <h4>Sports </h4>
-        <ul class="thumbnails" id="result"></ul>
-        <ul class="thumbnails" id="resultSearch"></ul>
-        <ul class="thumbnails" id="resultSearchAll"></ul>
+        <div class="blocker">
+            <div class="cards-items" id="result"></div>
+            <div class="cards-items" id="resultSearch"></div>
+            <div class="cards-items" id="resultSearchAll"></div>
+        </div>
 
     </div>
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/panier.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/scripts.js"></script>

@@ -96,3 +96,16 @@ DELETE FROM chaussures WHERE idxChaussure = 1;
 
 -- MISE A JOUR LA CHASSURE DE MARQUE SPARCO
 UPDATE chaussures SET nomChaussure = 'ADENCO2' WHERE idxChaussure = 2;
+
+
+
+CREATE TABLE `admin` (
+  `idxAdmin` int(10) NOT NULL AUTO_INCREMENT,
+  `userAdmin` varchar(50) NOT NULL,
+  `passAdmin` varchar(250) NOT NULL,
+  PRIMARY KEY (`idxAdmin`)
+) ENGINE=Innodb DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `admin` (`idxAdmin`, `userAdmin`, `passAdmin`) VALUES
+(1, 'superadmin', '$2y$10$ji2ihofaI2XAzcGS9xpyFufzC.FIsCXNorlaEkww8/tdkONSH3uGm');
